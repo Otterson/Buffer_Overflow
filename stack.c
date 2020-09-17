@@ -15,6 +15,7 @@
 
 int bof(char* str){
   char buffer[18];
+  printf("Buffer base address: %p\n", &buffer);
   strcpy(buffer,str); //Buffer Overflow Vulnerability
 
   return 1;
