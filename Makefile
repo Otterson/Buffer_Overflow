@@ -5,5 +5,5 @@ clean:
 attack:
 	gcc -o exploit exploit.c
 	./exploit 517 200
-	gcc -o stack -z execstack -fno-stack-protector stack.c
+	gcc -o stack -fno-stack-protector -z noexecstack stack.c
 	./stack
